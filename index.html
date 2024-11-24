@@ -2,55 +2,189 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitWork</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="Imagen/Logo-Fit.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <aside class="sidebar" id="sidebar">
+      <picture class="sidebar__picture">
+        <source srcset="Imagen/fit-work-colum2.png" media="(max-width: 1000px)">
+        <img src="Imagen/logo_small.png" alt="Logo Fit-Work">
+      </picture>
+      <nav class="sidebar__nav">
+        <ul>
+          <li class="sidebar__items">
+            <span class="material-symbols-outlined">Home</span>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="sidebar__items">
+            <span class="material-symbols-outlined">Exercise</span>
+            <a href="#">Gimnasio</a>
+          </li>
+          <li class="sidebar__items">
+            <span class="material-symbols-outlined">Sports_And_Outdoors</span>
+            <a href="#">Deportes</a>
+          </li>
+          <li class="sidebar__items">
+            <span class="material-symbols-outlined">Shopping_Cart</span>
+            <a href="#">Tienda</a>
+          </li>
+          <li class="sidebar__items">
+            <span class="material-symbols-outlined">Article</span>
+            <a href="#">Blogs</a>
+          </li>
+          <li class="sidebar__items">
+            <span class="material-symbols-outlined">Contact_Page</span>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
     <main>
-      <div>
-        <a href="index.html"><img src="Imagen/Logo2.png" class="logo" alt="Logo"></a>
-        <a href="inscripcion.html"><img src="Imagen/Icono.jpg" class="icono" alt="Icono"></a>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-        <h1>FitWork </h1>
-      </div>
-      <div id="menu">
-        <nav>
-          <ul class="menu">
-            <li><a href="inscripcion.html">Inscripción</a></li>  
-            <li><a href="programa-de-entrenamiento.html">Programas de Entrenamiento</a></li>
-            <li><a href="#">Planes de Nutrición</a></li>
-            <li><a href="#">Entrenadores</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-        <a href="inscripcion.html"><button class="login">Iniciar Sesión</button></a> 
-      </div> 
-      <hr>
-      <!--Comentario-->
-      <br>
-      <div id="columnas" class="columnas">
-        <div id="columna1" class="columna1">
-          <h2><img src="Imagen/Pesa.png" class="pesa"> Novedades</h2>
-          <h3><img id="Anuncio" class="Anuncio" src="Imagen/Novedad.jpg" /><p><a href="programa-de-entrenamiento.html" style="text-decoration: none;">Nuevo plan de entrenamiento enfocado en el adulto mayor</a></p></h3>
-          <p>Plan de entrenamiento especializado que incluye ejercicios adaptados a las necesidades individuales del adulto mayor.</p> 
-          <p>Ejercicios de baja intensidad y bajo impacto que mejoren la fuerza, flexibilidad, equilibrio y función cardiovascular</p> 
+      <section class="promos">
+        <div class="promo__container">
+          <img src="Imagen/Entrenamiento.avif" alt="Promo">
         </div>
-        <div id="columna2" class="columna2">
-          <h2><img src="Imagen/Pesa.png" class="pesa"> Promociones</h2>
-          <h3><img id="Anuncio" class="Anuncio" src="Imagen/Promocion.jpg"/><a href="programa-de-entrenamiento.html" style="text-decoration: none;"><p>25% de descuento en plan de entrenamiento multifuncional</a></p></h3>
-          <p>Durante el mes de abril y mayo el plan de entrenamiento multifuncional tendra el 25% de descuento en todas las modalidades.</p>
-          <p>Aplican terminos y condicones. El descuento no es acumulable con otras ofertas previas</p> 
-        </div>
-        <div id="columna3" class="columna3">
-          <h2><img src="Imagen/Pesa.png" class="pesa"> Recomendación</h2>
-          <h3><img id="Anuncio" class="Anuncio" src="Imagen/Recomendacion.jpg" /><a href="#" style="text-decoration: none;"><p>Conoce el plan nutricional para perder peso</a></p></h3>
-          <p>Nuestro plan nutricional para bajar de peso consiste en reducir el consumo de calorías, aumentar el consumo de alimentos saludables y limitar el consumo de alimentos procesados y altos en calorías. También fomenta el comer porciones moderadas y equilibradas y mantener una adecuada hidratación.</p>
-        </div>
+      </section>
+      <section class="planes">
+        <h2>Planes FIT-WORK</h2>
+        <div class="plan__container">
+          <div class="plan">
+            <div class="plan__front">
+              <h3>Fit Starter</h3>
+              <img src="Imagen/Plan1.avif" alt="Plan1">
+            </div>
+            <div class="plan__back">
+              <h3>Fit Starter</h3>
+                <h4>Precio: $29 USD al mes</h4>
+                  <ul>
+                    <li>Acceso ilimitado al gimnasio en horarios de baja afluencia.</li>
+                    <li>4 clases de deporte a elección (yoga, boxeo, spinning, etc.) al mes.</li>
+                    <li>5% de descuento en la tienda online en productos seleccionados.</li>
+                    <li>Asesoría de rutina mensual por un entrenador.</li>
+                  </ul> 
+            </div>
+          </div>
+          <div class="plan">
+            <div class="plan__front">
+              <h3>Pro Athlete</h3>
+              <img src="Imagen/Plan2.avif" alt="Plan2">
+            </div>
+            <div class="plan__back">
+              <h3>Pro Athlete</h3>
+                <h4>Precio: $59 USD al mes</h4>
+                  <ul>
+                    <li>Acceso ilimitado al gimnasio en cualquier horario.</li>
+                    <li>Clases ilimitadas en cualquier disciplina.</li>
+                    <li>Evaluación física mensual y asesoría de rutina personalizada.</li>
+                    <li>15% de descuento en la tienda online y en artículos deportivos.</li>
+                    <li>2 sesiones de entrenamiento personalizado al mes.</li>
+                  </ul> 
+            </div>
+          </div>
+          <div class="plan">
+            <div class="plan__front">
+              <h3>Elite Performance</h3>
+              <img src="Imagen/Plan3.avif" alt="Plan3">
+            </div>
+            <div class="plan__back">
+              <h3>Elite Performance</h3>
+                <h4>Precio: $99 USD al mes</h4>
+                  <ul>
+                    <li>Acceso exclusivo 24/7 al gimnasio y a clases de cualquier disciplina.</li>
+                    <li>Clases personalizadas.</li>
+                    <li>Evaluación física completa.</li>
+                    <li>Programa de nutrición personalizado mensual.</li>
+                    <li>25% de descuento en toda la tienda online.</li>
+                    <li>Hasta 5 sesiones de entrenamiento personal por mes.</li>
+                  </ul>
+            </div>
+          </div>
+      </section>
     </main>
+
+    <aside class="user__details">
+      <div class="profile__data">
+        <img src="Imagen/Icono.jpg" alt="Foto de perfil del usuario">
+        <h3>Nombre Apellidos Usuario</h3>
+      </div>
+      <div class="profile__item">
+        <span class="material-symbols-outlined">Calendar_Month</span>
+        <h3>Proximo Entrenamiento:</h3>
+      </div>
+      <div class="training_item">
+          <span class="material-symbols-outlined">Star</span>
+          <h4>Actividad:</h4>
+          <p>Taekwondo</p>
+      </div>
+      <div class="training_item">
+          <span class="material-symbols-outlined">Pin_Drop</span>
+          <h4>Lugar:</h4>
+          <p>Coliseo Taekwondo</p>
+      </div>
+      <div class="training_item">
+          <span class="material-symbols-outlined">Schedule</span>
+          <h4>Horario:</h4>
+          <p>10:00 AM</p>
+      </div>
+      <div class="profile__bar">
+        <h4>Tu Progreso:</h4>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div> <!-- Ajusta el ancho para reflejar el progreso -->
+            </div>
+      </div>    
+          <div class="profile__link">
+            <span class="material-symbols-outlined">Shopping_Bag </span>
+            <a href="#">Mis pedidos</a>
+          </div>
+          <div class="profile__link exit">
+            <span class="material-symbols-outlined">Logout</span>
+            <a href="#">Salir</a>
+          </div>
+        </ul>
+    </aside>
     <footer>
-      <p><strong><small>Entrenamiento deportivo - Sitio web de la aplicación FitWork</strong></small></p>
+      <p><strong><small>Inicio - Sitio web de la aplicación FitWork</strong></small></p>
+      <div class="divisor"></div>
+      <h3 class="Sigenos">Síguenos</h3>
+      <div class="divisor"></div>
+      <div class="redes">
+        <ul>
+          <li class="redes__icon">
+            <a href="#" target="_blank">
+            <img src="Imagen/WhatsApp.png" alt="Icono" class="icon">
+            </a>
+          </li>
+          <li class="redes__icon">
+            <a href="#" target="_blank">
+            <img src="Imagen/Youtube.png" alt="Icono" class="icon">
+            </a>
+          </li>
+          <li class="redes__icon">
+            <a href="#" target="_blank">
+            <img src="Imagen/Instagram.png" alt="Icono" class="icon">
+            </a>
+          </li>
+          <li class="redes__icon">
+            <a href="#" target="_blank">
+            <img src="Imagen/Twitter.png" alt="Icono" class="icon">
+            </a>
+          </li>
+          <li class="redes__icon">
+            <a href="#" target="_blank">
+            <img src="Imagen/Facebook.png" alt="Icono" class="icon">
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
+
